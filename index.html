@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>laxxx.js demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    </head>
+    <body>
+        <section class="header">
+            <h1 class="lax" data-lax-preset="zoomInOut blurOut">Loving messages</h1>
+        </section>
+        <section class="main">
+            <div class="container">
+                <img class="lax" data-lax-preset="leftToRight fadeInOut"
+                    src="img/kiss.png" alt="kiss">
+            </div>
+            <div class="container">
+                <img class="lax" data-lax-preset="leftToRight fadeInOut"
+                    src="img/yes.png" alt="yes">
+            </div>
+            <div class="container">
+                <img class="lax" data-lax-preset="leftToRight fadeInOut"
+                    src="img/love.png" alt="love">
+            </div>
+            <div class="container">
+                <img class="lax" data-lax-preset="leftToRight fadeInOut"
+                    src="img/missu.png" alt="missu">
+            </div>
+            <div class="container">
+                <img class="lax" data-lax-preset="leftToRight fadeInOut"
+                    src="img/heart.png" alt="heart">
+            </div>
+            <div class="container">
+                <img class="lax" data-lax-preset="leftToRight fadeInOut"
+                    src="img/iloveu.png" alt="iloveu">
+            </div>
+            <div class="container">
+                <img class="lax" data-lax-preset="leftToRight fadeInOut"
+                    src="img/happy.png" alt="happy">
+            </div>
+            <p class="lax" data-lax-opacity="0 1, 100 1, 200 0 | loop=200">
+                    Read documents from Laxxx.js
+                </p>
+            <img  class="lax" data-lax-preset="spin-640" src="img/spin.png" alt="spin">
+        </section>
+
+        <script>
+        window.onload = function() {
+	          lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+
+    </script>
+    </body>
+</html>
